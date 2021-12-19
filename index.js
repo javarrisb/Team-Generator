@@ -138,25 +138,25 @@ const buildEngineer = () => {
             type: 'input',
             name: 'id',
             message: "What is the engineer's ID number?"
-         },
-         {
-             type: 'input',
-             name: 'email',
-             message: "What is the engineer's email address?"
-         },
-         {
-             type: 'input',
-             name: 'github',
-             message: "What is the engineer's Github username?"
-         }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: "What is the engineer's email address?"
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: "What is the engineer's Github username?"
+        }
     ])
-    .then(({name, id, email, github}) => {
-        const engineer = new Engineer(name, id, email, github);
-        // push engineer data to team array
-        team.push(engineer);
+        .then(({ name, id, email, github }) => {
+            const engineer = new Engineer(name, id, email, github);
+            // push engineer data to team array
+            team.push(engineer);
 
-        menuOp();
-    });
+            menuOp();
+        });
 };
 
 // captures Intern user data
@@ -192,13 +192,13 @@ const buildIntern = () => {
 
         }
     ])
-    .then(({name, id, email, school}) => {
-        const intern = new Intern(name, id, email, school);
-        // push intern data to team array
-        team.push(intern);
+        .then(({ name, id, email, school }) => {
+            const intern = new Intern(name, id, email, school);
+            // push intern data to team array
+            team.push(intern);
 
-        menuOp();
-    });
+            menuOp();
+        });
 };
 
 const buildTeam = () => {

@@ -19,10 +19,10 @@ const generatePage = team => {
         <div class="container">
         <div class="row">
             ${team
-                .filter(employee => employee.getRole() === 'Manager')
-                .map(({ name, id, email, officeNumber}) => {
-                    console.log(officeNumber);
-                    return `
+            .filter(employee => employee.getRole() === 'Manager')
+            .map(({ name, id, email, officeNumber }) => {
+                console.log(officeNumber);
+                return `
                     <div class="col d-flex justify-content-center">
                         <div class="card" style="width: 18rem;"> 
                             <div class="card-header bg-danger">
@@ -39,12 +39,12 @@ const generatePage = team => {
                         </div>
                     </div>
                     `
-                }).join('')
-            }
+            }).join('')
+        }
             ${team
-                .filter(employee => employee.getRole() === 'Engineer')
-                .map(({name, id, email, github}) => {
-                    return `
+            .filter(employee => employee.getRole() === 'Engineer')
+            .map(({ name, id, email, github }) => {
+                return `
                     <div class="col d-flex justify-content-center">
                         <div class="card" style="width: 18rem;">
                             <div class="card-header bg-danger">
@@ -61,12 +61,12 @@ const generatePage = team => {
                         </div>
                     </div>
                      `
-                }).join('')
-            }
+            }).join('')
+        }
             ${team
-                .filter(employee => employee.getRole() === 'Intern') 
-                .map(({name, id, email, school}) => {
-                    return `
+            .filter(employee => employee.getRole() === 'Intern')
+            .map(({ name, id, email, school }) => {
+                return `
                     <div class="col d-flex justify-content-center">
                     <div class="card" style="width: 18rem;">
                         <div class="card-header bg-danger">
@@ -83,8 +83,8 @@ const generatePage = team => {
                     </div>
                 </div>
                 `
-                }).join('')
-            }
+            }).join('')
+        }
         </div>
     </div>
 </bpdy>

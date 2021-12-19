@@ -6,7 +6,7 @@ test('creates an employee object', () => {
     expect(employee.name).toBe('Jim');
     expect(employee.id).toBe('123');
     expect(employee.email).toBe('emp@test.com');
-    
+
 });
 
 test('retrieves employee properties', () => {
