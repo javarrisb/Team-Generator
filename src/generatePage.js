@@ -13,7 +13,7 @@ const generatePage = team => {
         <title>Team Profile</title>
     </head>
     <body>
-        <header class="p-3 mb-2 text-light bg-dark d-flex justify-content-center">
+        <header class="p-3 mb-2 text-light bg-primary d-flex justify-content-center">
             <h1> All Star Team </h1>
         </header>
         <div class="container">
@@ -25,11 +25,11 @@ const generatePage = team => {
                     return `
                     <div class="col d-flex justify-content-center">
                         <div class="card" style="width: 18rem;"> 
-                            <div class="card-header bg-primary">
-                                <h4 class="card-title text-light bg-dark">${name}</h4>
-                                <h5 class="card-subtitle text-light bg-dark"><i class="bi bi-cup"></i>Manager</h5>
+                            <div class="card-header bg-danger">
+                                <h4 class="card-title p-3 mb-2 bg-danger text-white">${name}</h4>
+                                <h5 class="card-subtitle p-3 mb-2 bg-danger text-white"><i class="bi bi-cup"></i>Manager</h5>
                             </div>
-                            <div class="card-body bg-secondary">
+                            <div class="card-body bg-light">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item border border-light mb-2">ID: <span class="fw-normal">${id}</span></li>
                                     <li class="list-group-item border border-light mb-2">Email: <a href="mailto:${email}" class="fw-normal">${email}</a></li>
@@ -47,9 +47,9 @@ const generatePage = team => {
                     return `
                     <div class="col d-flex justify-content-center">
                         <div class="card" style="width: 18rem;">
-                            <div class="card-header bg-primary">
-                                <h4 class="card-title text-light bg-dark">${name}</h4>
-                                <h5 class="card-subtitle text-light bg-dark"<i class="bi bi-eyeglasses"></i>Engineer</h5>
+                            <div class="card-header bg-danger">
+                                <h4 class="card-title p-3 mb-2 bg-danger text-white">${name}</h4>
+                                <h5 class="card-subtitle p-3 mb-2 bg-danger text-white"><i class="bi bi-eyeglasses"></i> Engineer</h5>
                             </div>
                             <div class="card-body bg-light">
                                 <ul class="list-group list-group-flush">
@@ -69,9 +69,9 @@ const generatePage = team => {
                     return `
                     <div class="col d-flex justify-content-center">
                     <div class="card" style="width: 18rem;">
-                        <div class="card-header bg-primary">
-                            <h4 class="card-title text-light bg-dark">${name}</h4>
-                            <h5 class="card-subtitle text-light bg-dark"<i class="bi bi-mortarboard"></i>Intern</h5>
+                        <div class="card-header bg-danger">
+                            <h4 class="card-title p-3 mb-2 bg-danger text-white">${name}</h4>
+                            <h5 class="card-subtitle p-3 mb-2 bg-danger text-white"><i class="bi bi-mortarboard"></i> Intern</h5>
                         </div>
                         <div class="card-body bg-light">
                             <ul class="list-group list-group-flush">
