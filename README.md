@@ -13,3 +13,14 @@
 
 ![cc10](https://user-images.githubusercontent.com/89273544/146691995-069d305f-de77-47aa-bfcb-8aa85b8555d5.png)
 
+ ## Contributions
+
+  Contributions were made by Javarrisb <br />
+
+  ## Tests 
+
+  In order to run tests on this application, please install:
+    ```
+    npm install
+    ```
+    and in the command line run `npm run test` <br />
