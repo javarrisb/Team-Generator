@@ -3,6 +3,7 @@
 # Description
 - Team-Generator is a Node application takes user input about employees of a team and generates a webpage that displays the information (email, GitHub, school, etc.) for each employee.
 
+- You can view the walkthrough here: https://www.youtube.com/watch?v=dG5_ZSWBd6U
 # Installation
 - In order to run this application, please install: 'npm inquirer' for capturing the user's input and 'jest' for running the tests.
 
