@@ -1,9 +1,9 @@
 // inquirer required packages
 const inquirer = require("inquirer")
 
-const Engineer = require('.lib/Engineer');
+const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-const Manager = require('.lib/Manager');
+const Manager = require('./lib/Manager');
 
 // generatePage to create HTML for employee's profile page 
 const generatePage = require('./src/generatePage');
@@ -76,6 +76,7 @@ const renderManager = () => {
         });
 };
 
+// menu to add employee 
 const menuOp = () => {
     return inquirer.prompt(
         {
@@ -95,6 +96,7 @@ const menuOp = () => {
         })
 };
 
+// captures what type of new employee 
 const newEmployee = () => {
     return inquirer.prompt(
         {
@@ -116,13 +118,14 @@ const newEmployee = () => {
         });
 }
 
+// captures Engineer input data
 const buildEngineer = () => {
     return inquirer.prompt([
         {
             type: 'input',
             name: 'name',
             message: "What is the engineer's name?",
-            validate: vlaue => {
+            validate: value => {
                 if (value) {
                     return true;
                 } else {
@@ -156,6 +159,7 @@ const buildEngineer = () => {
     });
 };
 
+// captures Intern user data
 const buildIntern = () => {
     return inquirer.prompt([
         {
